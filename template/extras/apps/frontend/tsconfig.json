@@ -1,0 +1,11 @@
+{
+  "extends": "@{{PROJECT_NAME}}/typescript-config/vite.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", ".output"]
+}

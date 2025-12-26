@@ -1,0 +1,23 @@
+{
+  "name": "{{PROJECT_NAME}}",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "oxlint packages apps",
+    "lint:fix": "oxlint packages apps --fix",
+    "format": "oxlint packages apps --fix",
+    "format:check": "oxlint packages apps",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "oxlint": "^1.24.0",
+    "turbo": "^2.5.8",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

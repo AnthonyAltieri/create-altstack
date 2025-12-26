@@ -1,0 +1,66 @@
+{
+  "name": "create-altstack",
+  "version": "0.1.0",
+  "description": "CLI tool to bootstrap alt-stack monorepos with TypeScript, Hono/Express/Bun, TanStack Start, and more",
+  "type": "module",
+  "bin": {
+    "create-altstack": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "keywords": [
+    "cli",
+    "create",
+    "altstack",
+    "alt-stack",
+    "monorepo",
+    "typescript",
+    "scaffold",
+    "hono",
+    "express",
+    "bun",
+    "tanstack",
+    "tanstack-start",
+    "react",
+    "fullstack",
+    "turborepo"
+  ],
+  "author": "Anthony Altieri",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyAltieri/create-altstack.git"
+  },
+  "homepage": "https://github.com/AnthonyAltieri/create-altstack#readme",
+  "bugs": {
+    "url": "https://github.com/AnthonyAltieri/create-altstack/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.9.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "execa": "^9.5.0",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "^3.0.0",
+    "ora": "^8.1.0",
+    "sort-package-json": "^2.10.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/gradient-string": "^1.1.6",
+    "tsup": "^8.3.0",
+    "type-fest": "^4.30.0",
+    "typescript": "^5.7.0"
+  }
+}
